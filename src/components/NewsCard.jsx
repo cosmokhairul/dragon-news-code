@@ -1,9 +1,11 @@
 import React from "react";
 import { FaRegBookmark, FaRegEye, FaShareAlt, FaStar } from "react-icons/fa";
 import { format } from "date-fns";
+import { Link } from "react-router";
 
 const NewsCard = ({ news }) => {
-  const { title, author, thumbnail_url, details, total_view, rating } = news;
+  const { id, title, author, thumbnail_url, details, total_view, rating } =
+    news;
 
   const formattedDate = format(new Date(author.published_date), "yyyy-MM-dd");
 
@@ -48,11 +50,22 @@ const NewsCard = ({ news }) => {
       </div>
 
       {/* Description */}
-      <p className="text-sm text-gray-700 line-clamp-3 mb-2">{details}</p>
 
-      <a className="text-orange-500 text-sm font-medium cursor-pointer">
-        Read More
-      </a>
+      <div className="px-4 text-accent">
+        {details.length > 200 ? (
+          <>
+            {details.slice(0, 200)}...
+            <Link
+              to={`/news-details/${id}`}
+              className="text-primary font-semibold cursor-pointer hover:underline"
+            >
+              Read More
+            </Link>
+          </>
+        ) : (
+          details
+        )}
+      </div>
 
       {/* Footer */}
       <div className="flex justify-between items-center mt-4 border-t pt-2">
