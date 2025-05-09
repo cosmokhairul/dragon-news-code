@@ -9,17 +9,17 @@ const FindUs = () => {
 
       <div>
         <div className="join join-vertical w-full">
-          <button className="btn join-item bg-base-100 justify-start">
+          <button className="btn join-item bg-base-100 justify-start hover:bg-gray-200">
             {" "}
             <FaFacebook />
             Facebook
           </button>
-          <button className="btn join-item bg-base-100 justify-start">
+          <button className="btn join-item bg-base-100 justify-start hover:bg-gray-200">
             {" "}
             <FaTwitter />
             Twitter
           </button>
-          <button className="btn join-item bg-base-100 justify-start">
+          <button className="btn join-item bg-base-100 justify-start hover:bg-gray-200">
             {" "}
             <FaInstagram />
             Instagram
