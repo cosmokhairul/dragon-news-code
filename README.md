@@ -1,12 +1,30 @@
-# React + Vite
+# UtiPay
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+This is a **Bill Management Website** designed to allow users to easily pay their utility bills. Users can view and pay bills for services like **electricity**, **gas**, **water**, **internet**, etc., directly through their account using their balance. The website features a clean, user-friendly interface and allows seamless navigation, authentication, and payment handling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
 
-## Expanding the ESLint configuration
+- **Bill Payment**: Users can view a list of bills (Electricity, Gas, Water, Internet, etc.) and pay them using their account balance.
+- **User Authentication**: Users can register, log in, and manage their profile. Social login through Google is also available.
+- **Responsive Design**: Fully responsive layout that works seamlessly on mobile, tablet, and desktop devices.
+- **Data Security**: Firebase is used for authentication, and environment variables secure sensitive API keys.
+- **Organizational Support**: The platform supports a range of service providers, such as DESCO, WASA, and Tista, among others.
+- **Bill Filtering**: Bills can be filtered based on their type (e.g., electricity, gas, water).
+- **Dynamic Bill Updates**: Users can update their profile information, including their display name and profile picture.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Live Link
+
+[View Live Website Here](https://darling-puppy-af4ecd.netlify.app/)
+
+## Used NPM Packages
+
+1. React
+2. Tailwind CSS
+3. Vite
+4. React Router
+5. Firebase
+6. React Countup
+7. SwiperJS
+8. React Icons
