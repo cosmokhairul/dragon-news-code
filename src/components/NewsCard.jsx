@@ -68,7 +68,7 @@ const NewsCard = ({ news }) => {
       </div>
 
       {/* Footer */}
-      <div className="flex justify-between items-center mt-4 border-t border-gray-300 p-5">
+      <div className="flex justify-between items-center mt-5 border-t border-gray-300 p-6">
         <div className="flex items-center gap-1 text-orange-500">
           <FaStar className="text-lg" />
           <span className="font-semibold text-gray-800">{rating.number}</span>
